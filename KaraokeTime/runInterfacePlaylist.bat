@@ -1,0 +1,1 @@
+java KaraokeTime.GraphiqueKaraoke.FenetrePlaylistKaraoke

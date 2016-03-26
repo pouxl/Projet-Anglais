@@ -1,0 +1,2 @@
+javadoc -private -windowtitle "KaraokeTime Java API (Version Programmeur)" -splitIndex -d DocProgrammeur KaraokeTime KaraokeTime.GraphiqueKaraoke KaraokeTime.GestionKaraoke KaraokeTime.GestionKaraoke.AudioPlugins KaraokeTime.GestionKaraoke.VisualPlugins
+javadoc -windowtitle "KaraokeTime Java API (Version Utilisateur)" -splitIndex -d DocUtilisateur KaraokeTime KaraokeTime.GraphiqueKaraoke KaraokeTime.GestionKaraoke KaraokeTime.GestionKaraoke.AudioPlugins KaraokeTime.GestionKaraoke.VisualPlugins
