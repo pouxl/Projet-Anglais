@@ -18,7 +18,7 @@ import KaraokeTime.EvenementKaraoke;
 public class FenetreLectureKaraoke extends FenetreGeneraleKaraoke implements Observer{
 		private JButton boutonQuit;
 		private JPanel plugin;
-    private JComboBox imgTypeCombo;
+		private JComboBox imgTypeCombo;
 		private Container fenetre;		
 
 		/** Constructeur de la classe FenetreLectureKaraoke
@@ -28,9 +28,9 @@ public class FenetreLectureKaraoke extends FenetreGeneraleKaraoke implements Obs
 			
 				plugin  = new JPanel();
 
-				boutonQuit = new JButton("Fermer");
-				boutonQuit.setToolTipText("Fermer la Fenetre");
-				boutonQuit.setActionCommand("Fermer");
+				boutonQuit = new JButton("Close");
+				boutonQuit.setToolTipText("Close the Window");
+				boutonQuit.setActionCommand("Close");
 				boutonQuit.setFocusPainted(false);
 				boutonQuit.setMargin(new Insets(1,1,1,1));
 	
@@ -38,7 +38,7 @@ public class FenetreLectureKaraoke extends FenetreGeneraleKaraoke implements Obs
 				boutonQuit.addActionListener(act);
 
         imgTypeCombo = new JComboBox();
-				imgTypeCombo.setToolTipText("Choix du Plugin de Visualisation");
+				imgTypeCombo.setToolTipText("Playing plugin choice");
         imgTypeCombo.setPreferredSize(new Dimension(120, 18));
         imgTypeCombo.setFont(font);
 				for (int i = 0; i < listePluginsVisuels.size(); i++) {

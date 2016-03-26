@@ -13,10 +13,10 @@ class TestListener implements  ActionListener, ItemListener{
 		 */
 		public void actionPerformed(ActionEvent e) {
 				String bouton = e.getActionCommand();
-				System.out.println("Bouton " + bouton  + " appuye");
-				if (bouton == "Quitter")
+				System.out.println("Pressed " + bouton  + " button");
+				if (bouton == "Leave")
 						System.exit(0);
-				if (bouton == "Fermer")
+				if (bouton == "Exit")
 						System.exit(0);
 		}
 		
@@ -25,8 +25,8 @@ class TestListener implements  ActionListener, ItemListener{
 		public void itemStateChanged(ItemEvent e) {
 				//c'est la que doit se faire le changement de plugin visuel
 				if (e.getStateChange() == e.DESELECTED)
-						System.out.println(e.getItem() + " Deselectionne");
+						System.out.println(e.getItem() + " Deselected");
 				else
-						System.out.println(e.getItem() + " Selectionne");
+						System.out.println(e.getItem() + " Selected");
 		}		
 }

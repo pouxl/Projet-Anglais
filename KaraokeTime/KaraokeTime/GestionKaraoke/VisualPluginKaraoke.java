@@ -37,7 +37,7 @@ public class VisualPluginKaraoke implements PluginKaraoke {
 		 *  (a redefinir par chaque plugin)
 		 */
 		public String getName() {
-				return "Plugin de base";
+				return "Basic";
 		}
 
 		/** Chaque plugin visuel doit creer un JPanel

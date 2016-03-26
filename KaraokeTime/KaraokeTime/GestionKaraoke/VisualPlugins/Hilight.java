@@ -33,7 +33,7 @@ public class Hilight extends VisualPluginKaraoke {
 		/**  Permet de connaitre le nom du plugin
 		 */
 		public String getName() {
-				return "Visual Hilight !";
+				return "Visual karaoke";
 		}
 
 
@@ -116,7 +116,7 @@ public class Hilight extends VisualPluginKaraoke {
 				private boolean afficheActuel = false;
 				private boolean finRepaint = true;
 				private Toolkit tk = getToolkit();
-				private Image image = tk.getImage(MonPannel.class.getResource("clouds.jpg"));
+				private Image image = tk.getImage(MonPannel.class.getResource("logo2.jpg"));
 				
 
 				/** Constructeur du JPanel
@@ -309,7 +309,7 @@ public class Hilight extends VisualPluginKaraoke {
 												sha = (Shape)contourMots.elementAt(i - initIndex);
 												g2.setColor(Color.black);
 												g2.draw(sha);
-												g2.setColor(Color.blue);
+												g2.setColor(Color.cyan);
 												g2.fill(sha);
 										}
 										

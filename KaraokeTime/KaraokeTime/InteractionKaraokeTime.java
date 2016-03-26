@@ -46,7 +46,7 @@ public class InteractionKaraokeTime implements  ActionListener, ItemListener{
 		 */
 		public void actionPerformed(ActionEvent e) {
 				String bouton = e.getActionCommand();
-				if (bouton == "Quitter"){
+				if (bouton == "Exit"){
 						fenetrePlaylist.terminer();
 						gestionPlaylist.terminer();
 						System.exit(0);
@@ -86,7 +86,7 @@ public class InteractionKaraokeTime implements  ActionListener, ItemListener{
 				}
 				
 				if (bouton == "Add"){
-						chooser.setDialogTitle("Ajout d'un fichier karaoke"); 
+						chooser.setDialogTitle("Add a karakoe file"); 
 						chooser.setFileFilter(chooser.getAcceptAllFileFilter()); 
 						chooser.resetChoosableFileFilters();
 						int returnVal = chooser.showOpenDialog(fenetrePlaylist);
@@ -103,7 +103,7 @@ public class InteractionKaraokeTime implements  ActionListener, ItemListener{
 						}
 				}
 				if (bouton == "Save"){
-						chooser.setDialogTitle("Sauvegarde de la Playlist Karaoke"); 
+						chooser.setDialogTitle("Saving playlist"); 
 						chooser.resetChoosableFileFilters();
 						chooser.addChoosableFileFilter(filter);
 						chooser.setFileFilter(filter);
@@ -115,7 +115,7 @@ public class InteractionKaraokeTime implements  ActionListener, ItemListener{
 						}
 				}
 				if (bouton == "Load"){
-						chooser.setDialogTitle("Chargement d'une Playlist Karaoke");
+						chooser.setDialogTitle("Loading a playlist");
 						chooser.resetChoosableFileFilters();
 						chooser.addChoosableFileFilter(filter);
 						chooser.setFileFilter(filter);
@@ -126,7 +126,7 @@ public class InteractionKaraokeTime implements  ActionListener, ItemListener{
 								fenetrePlaylist.changePlaylist(gestionPlaylist.getPlaylist());
 						}
 				}
-				if (bouton == "Nouv"){
+				if (bouton == "New"){
 						nouvelleFenetre(400, 300, 0);
 				}
 				if (bouton == "Load"){

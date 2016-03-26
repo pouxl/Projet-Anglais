@@ -1,0 +1,15 @@
+package KaraokeTime.GestionKaraoke.VisualPlugins;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.*;
+
+import KaraokeTime.GestionKaraoke.VisualPluginKaraoke;
+
+
+
+/** Plugin Neant : Ce plugin ne fait rien du tout : cool non ?!!
+ */
+public class Plug1 extends VisualPluginKaraoke {
+
+}

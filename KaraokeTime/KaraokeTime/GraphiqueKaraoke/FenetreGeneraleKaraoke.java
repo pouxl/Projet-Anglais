@@ -44,7 +44,7 @@ public class FenetreGeneraleKaraoke extends JFrame implements Observer{
 		public void creeWindowListener(){
 				addWindowListener(new WindowAdapter() {
 						public void windowClosing(WindowEvent e) {
-								System.out.println("Fermeture brutale de la fenetre");
+								System.out.println("Abrupt closure of the window");
 								System.exit(0);
 						}
 				});

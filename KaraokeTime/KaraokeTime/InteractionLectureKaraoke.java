@@ -55,7 +55,7 @@ public class InteractionLectureKaraoke implements  ActionListener, ItemListener{
 		public void actionPerformed(ActionEvent e) {
 				String bouton = e.getActionCommand();
 				//System.out.println("Bouton " + bouton  + " appuye");
-				if (bouton == "Fermer"){
+				if (bouton == "Exit"){
 						terminer();
 				}
 		}

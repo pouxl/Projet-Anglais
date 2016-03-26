@@ -28,7 +28,7 @@ public class Chrono extends VisualPluginKaraoke implements Runnable{
 		/**  Permet de connaitre le nom du plugin
 		 */
 		public String getName() {
-				return "Chronometre";
+				return "Stopwatch";
 		}
 		
 

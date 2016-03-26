@@ -29,7 +29,7 @@ public class TimeList extends VisualPluginKaraoke{
 		/**  Permet de connaitre le nom du plugin
 		 */
 		public String getName() {
-				return "Karaoke Liste";
+				return "Karaoke List";
 		}
 		
 		/** est appelee lorsque un nouveau 'mot' doir etre affiche 

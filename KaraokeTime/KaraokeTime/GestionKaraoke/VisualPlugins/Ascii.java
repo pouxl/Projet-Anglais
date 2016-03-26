@@ -24,7 +24,7 @@ public class Ascii extends VisualPluginKaraoke{
 		/**  Permet de connaitre le nom du plugin
 		 */
 		public String getName() {
-				return "Ascii (paroles)";
+				return "Lyrics";
 		}
 
 		/**  Affiche paroles, auteur, nom dans la zone texte
@@ -34,11 +34,11 @@ public class Ascii extends VisualPluginKaraoke{
 				char[] c = {'\n'};
 				String nl = new String(c);
 				if (nomChanson != null){
-						resText = resText.concat("TITRE : " + nomChanson);
+						resText = resText.concat("TITLE : " + nomChanson);
 						resText = resText.concat(nl);
 				}
 				if (auteurChanson != null){
-						resText = resText.concat("AUTEUR : " + auteurChanson);
+						resText = resText.concat("AUTHOR : " + auteurChanson);
 						resText = resText.concat(nl);
 				}
 				if ((textEvents != null) && (text != null)){

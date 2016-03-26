@@ -63,7 +63,7 @@ public class FenetrePlaylistKaraoke extends FenetreGeneraleKaraoke {
 				boutonUp = new JButton(imageUpb);
 				boutonUp.setRolloverIcon(imageUp);
 				boutonUp.setPressedIcon(imageUpj);
-				boutonUp.setToolTipText("monter la selection");
+				boutonUp.setToolTipText("Up in selection");
 				boutonUp.setActionCommand("Up");
 				boutonUp.setFocusPainted(false);
 				boutonUp.setMargin(new Insets(1,1,1,1));
@@ -73,7 +73,7 @@ public class FenetrePlaylistKaraoke extends FenetreGeneraleKaraoke {
 				boutonDown = new JButton(imageDownb);
 				boutonDown.setRolloverIcon(imageDown);
 				boutonDown.setPressedIcon(imageDownj);
-				boutonDown.setToolTipText("descendre la selection");
+				boutonDown.setToolTipText("Down inselection");
 				boutonDown.setActionCommand("Down");
 				boutonDown.setFocusPainted(false);
 				boutonDown.setMargin(new Insets(1,1,1,1));
@@ -83,7 +83,7 @@ public class FenetrePlaylistKaraoke extends FenetreGeneraleKaraoke {
 				boutonPlay = new JButton(imagePlayb);
 				boutonPlay.setRolloverIcon(imagePlay);
 				boutonPlay.setPressedIcon(imagePlayj);
-				boutonPlay.setToolTipText("Demarrer la musique");
+				boutonPlay.setToolTipText("Play");
 				boutonPlay.setActionCommand("Play");
 				boutonPlay.setFocusPainted(false);
 				boutonPlay.addActionListener(act);
@@ -92,7 +92,7 @@ public class FenetrePlaylistKaraoke extends FenetreGeneraleKaraoke {
 				boutonStop = new JButton(imageStopb);
 				boutonStop.setRolloverIcon(imageStop);
 				boutonStop.setPressedIcon(imageStopj);
-				boutonStop.setToolTipText("Arreter la musique");
+				boutonStop.setToolTipText("Stop");
 				boutonStop.setActionCommand("Stop");
 				boutonStop.setFocusPainted(false);
 				boutonStop.addActionListener(act);
@@ -101,7 +101,7 @@ public class FenetrePlaylistKaraoke extends FenetreGeneraleKaraoke {
 				boutonPrev = new JButton(imagePrevb);
 				boutonPrev.setRolloverIcon(imagePrev);
 				boutonPrev.setPressedIcon(imagePrevj);
-				boutonPrev.setToolTipText("Chanson precedante");
+				boutonPrev.setToolTipText("Previous song");
 				boutonPrev.setActionCommand("Prev");
 				boutonPrev.setFocusPainted(false);
 				boutonPrev.addActionListener(act);
@@ -110,56 +110,56 @@ public class FenetrePlaylistKaraoke extends FenetreGeneraleKaraoke {
 				boutonNext = new JButton(imageNextb);
 				boutonNext.setRolloverIcon(imageNext);
 				boutonNext.setPressedIcon(imageNextj);
-				boutonNext.setToolTipText("Chanson suivante");
+				boutonNext.setToolTipText("Next song");
 				boutonNext.setActionCommand("Next");
 				boutonNext.setFocusPainted(false);
 				boutonNext.addActionListener(act);
 
 				// BOUTON LOAD
 				boutonLoad = new JButton("LOAD");
-				boutonLoad.setToolTipText("Charger une playlist");
+				boutonLoad.setToolTipText("Load a playlist");
 				boutonLoad.setActionCommand("Load");
 				boutonLoad.setMargin(new Insets(1,1,1,1));
 				boutonLoad.addActionListener(act);
 
 				// BOUTON SAVE
 				boutonSave = new JButton("SAVE");
-				boutonSave.setToolTipText("Sauver la playlist");
+				boutonSave.setToolTipText("Save the playlist");
 				boutonSave.setActionCommand("Save");
 				boutonSave.setMargin(new Insets(1,1,1,1));
 				boutonSave.addActionListener(act);
 
 				// BOUTON ADD
 				boutonAdd = new JButton("ADD");
-				boutonAdd.setToolTipText("Ajouter un fichier a la playlist");
+				boutonAdd.setToolTipText("Add a file");
 				boutonAdd.setActionCommand("Add");
 				boutonAdd.setMargin(new Insets(1,1,1,1));
 				boutonAdd.addActionListener(act);
 
 				// BOUTON DELETE
 				boutonDelete = new JButton("DELETE");
-				boutonDelete.setToolTipText("Ajouter un fichier a la playlist");
+				boutonDelete.setToolTipText("Delete a file");
 				boutonDelete.setActionCommand("Delete");
 				boutonDelete.setMargin(new Insets(1,1,1,1));
 				boutonDelete.addActionListener(act);
 
 				// BOUTON QUIT
-				boutonQuit = new JButton("Quitter");
-				boutonQuit.setToolTipText("Quitter le Programme");
-				boutonQuit.setActionCommand("Quitter");
+				boutonQuit = new JButton("Exit");
+				boutonQuit.setToolTipText("Exit program");
+				boutonQuit.setActionCommand("Exit");
 				boutonQuit.setMargin(new Insets(1,1,1,1));
 				boutonQuit.addActionListener(act);
 
 				// BOUTON NOUVELLE FENETRE
-				boutonNouv = new JButton("Nouvelle Fenetre");
-				boutonNouv.setToolTipText("Cree une nouvelle fenetre de visualisation");
-				boutonNouv.setActionCommand("Nouv");
+				boutonNouv = new JButton("New window");
+				boutonNouv.setToolTipText("New window");
+				boutonNouv.setActionCommand("New");
 				boutonNouv.setMargin(new Insets(1,1,1,1));
 				boutonNouv.addActionListener(act);
 
 				// COMBO BOX CHOIX DU PLUGIN SONORE
         sndTypeCombo = new JComboBox();
-				sndTypeCombo.setToolTipText("Choix du Plugin de Lecture");
+				sndTypeCombo.setToolTipText("Playing plugin choice");
         sndTypeCombo.setFont(font);
 				for (int i = 0; i < listePluginsAudio.size(); i++) {
 						sndTypeCombo.addItem(listePluginsAudio.elementAt(i));
