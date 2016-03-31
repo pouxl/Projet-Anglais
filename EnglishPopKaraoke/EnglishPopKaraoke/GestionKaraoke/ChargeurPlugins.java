@@ -26,7 +26,7 @@ public class ChargeurPlugins {
 								sort(list);
 								for (int i = 0; i < list.length; i++) {
 										if (list[i].indexOf('$') == -1 && list[i].endsWith(".class")) {
-												String nomFich = "KaraokeTime.GestionKaraoke." + rep + "." + list[i].substring(0,list[i].indexOf('.'));
+												String nomFich = "EnglishPopKaraoke.GestionKaraoke." + rep + "." + list[i].substring(0,list[i].indexOf('.'));
 												try{
 														Class c = Class.forName(nomFich);
 														PluginKaraoke plug = null;

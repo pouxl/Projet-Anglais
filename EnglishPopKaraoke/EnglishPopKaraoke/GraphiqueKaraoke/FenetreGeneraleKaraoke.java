@@ -7,7 +7,7 @@ import javax.swing.*;
 
 import EnglishPopKaraoke.EvenementKaraoke;
 
-/** fenetre graphique generale de karaoke time
+/** fenetre graphique generale de EnglishPop Karaoke
  *  c'est d'elle que derive toutes les fenetres graphiques
  *  Elle observe un objet de type EvenementKaraoke
  */
@@ -87,9 +87,9 @@ public class FenetreGeneraleKaraoke extends JFrame implements Observer{
 		 */
 		public void actualiseTitreChanson(){
 				if (titreChanson != null)
-						setTitle("Karaoke Time : " + titreChanson);
+						setTitle("EnglishPop Karaoke : " + titreChanson);
 				else
-						setTitle("Karaoke Time");
+						setTitle("EnglishPop Karaoke");
 
 		}
 }

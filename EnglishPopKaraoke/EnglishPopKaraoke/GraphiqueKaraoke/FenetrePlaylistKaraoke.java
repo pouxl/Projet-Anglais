@@ -23,7 +23,7 @@ public class FenetrePlaylistKaraoke extends FenetreGeneraleKaraoke {
 		private JButton boutonAdd;
 		private JButton boutonDelete;
 
-    private JComboBox sndTypeCombo;
+    //private JComboBox sndTypeCombo;
 		private JList playlist = new JList(new DefaultListModel());
 		JScrollPane scrollPane = new JScrollPane(playlist);
 
@@ -158,7 +158,7 @@ public class FenetrePlaylistKaraoke extends FenetreGeneraleKaraoke {
 				boutonNouv.addActionListener(act);
 
 				// COMBO BOX CHOIX DU PLUGIN SONORE
-        sndTypeCombo = new JComboBox();
+       /* sndTypeCombo = new JComboBox();
 				sndTypeCombo.setToolTipText("Playing plugin choice");
         sndTypeCombo.setFont(font);
 				for (int i = 0; i < listePluginsAudio.size(); i++) {
@@ -166,7 +166,7 @@ public class FenetrePlaylistKaraoke extends FenetreGeneraleKaraoke {
 				}
         if (listePluginsAudio.size() != 0)
         sndTypeCombo.setSelectedIndex(0);
-        sndTypeCombo.addItemListener(itm);
+        sndTypeCombo.addItemListener(itm);*/
 
 
 				Container c = getContentPane();
@@ -243,8 +243,8 @@ public class FenetrePlaylistKaraoke extends FenetreGeneraleKaraoke {
 				gridbagC4.weighty = 1;
 				gridbag4.setConstraints(paneGestPlaylist, gridbagC4); 
 				paneBas.add(paneGestPlaylist);
-				gridbag4.setConstraints(sndTypeCombo, gridbagC4); 
-				paneBas.add(sndTypeCombo);
+				//gridbag4.setConstraints(sndTypeCombo, gridbagC4); 
+				//paneBas.add(sndTypeCombo);
 				gridbag4.setConstraints(boutonNouv, gridbagC4); 
 				paneBas.add(boutonNouv);
 				gridbag4.setConstraints(boutonQuit, gridbagC4); 

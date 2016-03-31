@@ -10,9 +10,9 @@ import EnglishPopKaraoke.GraphiqueKaraoke.*;
 
 import java.io.*;
 
-/** Classe d'interaction entre la fenetre graphique de Playlist KaraokeTime et 
+/** Classe d'interaction entre la fenetre graphique de Playlist EnglishPopKaraoke et 
  *  et la classe de gestion de celle-ci.
- *  c'est l'objet a creer pour lancer KARAOKE TIME
+ *  c'est l'objet a creer pour lancer EnglishPop Karaoke
  */
 public class InteractionEnglishPopKaraoke implements  ActionListener, ItemListener{
 		private FenetrePlaylistKaraoke  fenetrePlaylist;
